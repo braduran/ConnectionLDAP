@@ -43,7 +43,7 @@ public class ConnectionLDAP {
 		NamingEnumeration<?> namingEnum = null;
 		String name = "uid=" + user + ",dc=example,dc=com";
 		String filter = "(objectClass=inetOrgPerson)";
-		String []returnedAttributes = {"cn","sn","email"};
+		String []returnedAttributes = {"cn","sn","mail"};
 		
 		SearchControls sc = new SearchControls();
 		sc.setSearchScope(SearchControls.SUBTREE_SCOPE);
